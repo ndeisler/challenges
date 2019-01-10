@@ -12,17 +12,35 @@
 // evenArray = [2,4];
 // oddArray = [1,3];
 
-let numbers = [4, 6, 5, 8, 6, 2, 7, 3, 9, 4, 7, 10, 2, 1, 1];
-let oddNumbers = [];
-let evenNumbers = [];
-for (var i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-        evenNumbers.push(numbers[i]);
-    } 
-    else if ((numbers[i] - 1) % 2 === 0) {
-        oddNumbers.push(numbers[i]);
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function splitEvenOdd(arr) {
+    let oddNumbers = [];
+    let evenNumbers = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            evenNumbers.push(arr[i]);
+        } 
+        else if ((arr[i] - 1) % 2 === 0) {
+            oddNumbers.push(arr[i]);
+        }
     }
+    console.log(numbers);
+    console.log(evenNumbers);
+    console.log(oddNumbers);
 }
-console.log(numbers);
-console.log(evenNumbers);
-console.log(oddNumbers);
+splitEvenOdd(numbers);
+
+
+// let oddNumbers = [];
+// let evenNumbers = [];
+// for (var i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0) {
+//         evenNumbers.push(numbers[i]);
+//     } 
+//     else if ((numbers[i] - 1) % 2 === 0) {
+//         oddNumbers.push(numbers[i]);
+//     }
+// }
+// console.log(numbers);
+// console.log(evenNumbers);
+// console.log(oddNumbers);

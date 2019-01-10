@@ -53,17 +53,17 @@ If it is, have JavaScript console.log that their word is a palindrome; if it is 
 ////////Function that prompts the user onClick.
 
 function myFunction() {
-    let re = /[\W_]/g;
-    let answer = prompt("Enter a word to check if it is a palindrome");
-    let answerLower = answer.toLowerCase().replace(re, "");
-    let reverseAnswer = answerLower.split("").reverse().join("");
+    let re = /[\W_]/g; // Will take car of spaces and puncuation
+    let answer = prompt("Enter a word to check if it is a palindrome"); //promts the user, saves the repsonse to a variable
+    let answerLower = answer.toLowerCase().replace(re, "");//takes the response and lower cases it
+    let reverseAnswer = answerLower.split("").reverse().join(""); //takes lowercase respoinse and turns it into an array, reverses the array, and joins it back together into a string
 
-    let el = document.getElementById("answer");
+    let el = document.getElementById("answer"); //targest element with an id of answer
 
-    if (answerLower === reverseAnswer) {
-        el.textContent = `${answer} : Is a palindrome!`;
+    if (answerLower === reverseAnswer) {    // checks to see if answerLower is the same as reverseAnswer
+        el.textContent = `${answer} : Palindrome!`; //changes text content to show that user response was a palindrome
     } else {
-        el.textContent = `${answer} : Is  !Palindrome`;
+        el.textContent = `${answer} : Is !Palindrome`; //changes text content to show that user response is not a palindrome
     }
 }
 
@@ -124,7 +124,7 @@ function myFunction() {
 /****************************** 
 Palindrome as a parameter
 *******************************/
-// var string = "race car";
+// var string = "race car race car";
 
 // function isPalindrome(str) {
 //     let re = /[\W_]/g;
@@ -141,3 +141,13 @@ Palindrome as a parameter
 //     }
 // }
 // isPalindrome(string);
+
+
+
+
+
+
+
+
+
+
