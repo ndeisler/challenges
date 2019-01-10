@@ -13,6 +13,7 @@
 // oddArray = [1,3];
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+randomNumbers = [12, 5, 756, 234, 74, 23, 7, 30, 1, 43 , 232, 4];
 function splitEvenOdd(arr) {
     let oddNumbers = [];
     let evenNumbers = [];
@@ -29,6 +30,7 @@ function splitEvenOdd(arr) {
     console.log(oddNumbers);
 }
 splitEvenOdd(numbers);
+splitEvenOdd(randomNumbers);
 
 
 // let oddNumbers = [];
