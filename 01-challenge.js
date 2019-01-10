@@ -65,7 +65,9 @@ function myFunction() {
     } else {
         el.textContent = `${answer} : Is !Palindrome`; //changes text content to show that user response is not a palindrome
     }
-}
+} 
+
+// console.log("it");
 
 
 //Prompts and changes text on WebPage**************
