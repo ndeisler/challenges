@@ -106,22 +106,7 @@ function myFunction() {
 // reverseString(answer);
 
 
-//USING A FOR LOOP TO REVERSE STRING???
 
-// let key = "racecar";
-// let reversedKey = reverseKey(key);
-// function reverseKey(response) {
-//     let newStr = "";
-//     for (i = key.length - 1; i >= 0; i--) {
-//         newStr += response[i];  
-//     }
-//     return newStr;
-// }
-// if (key === reversedKey) {
-//     console.log("Is palindrome");
-// } else {
-//     console.log("Is !Palindrom");
-// }
 
 /****************************** 
 Palindrome as a parameter
