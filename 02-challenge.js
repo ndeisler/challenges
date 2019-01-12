@@ -32,6 +32,24 @@ function splitEvenOdd(arr) {
 splitEvenOdd(numbers);
 splitEvenOdd(randomNumbers);
 
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function evenOddArrays(arr) {
+    let odd = [];
+    let even = [];
+    arr.forEach(i => {
+        if (i % 2 === 0) {
+            even.push(i);
+        }
+        else if ((i - 1) % 2 === 0) {
+            odd.push(i);
+        }
+    })
+    console.log(even, odd);
+}
+evenOddArrays(array);
+
+
+
 
 // let oddNumbers = [];
 // let evenNumbers = [];
