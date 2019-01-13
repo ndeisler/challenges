@@ -41,5 +41,26 @@ function swap(obj) {
 swap(person);
 
 
+//OR
+
+let newPerson = {
+    name: "Calli",
+    age: 27,
+    occupation: "JavaScript",
+    born: "Louisiana",
+    eyeColor: "brown"
+}
+let swapMe = (obj) => {
+    let swapPerson = {};
+    Object.keys(obj).forEach(i => {
+        swapPerson[obj[i]] = i;
+    })
+    return swapPerson;
+}
+
+console.log(swapMe(newPerson));
+
+
+
 
 
