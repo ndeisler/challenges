@@ -47,7 +47,7 @@ let newPerson = {
     name: "Calli",
     age: 27,
     occupation: "JavaScript",
-    born: "Louisiana",
+    born: "Las Vegas",
     eyeColor: "brown"
 }
 let swapMe = (obj) => {
