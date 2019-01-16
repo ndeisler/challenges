@@ -10,17 +10,23 @@
 
 
 function checkInputs() {
+
     var empty = "";
+    var btn = document.getElementById("submit");
     var userName = document.getElementById("userName").value;
     var password = document.getElementById("password").value;
     var confirmPassword = document.getElementById("confirmPassword").value;
-
+    
     if (userName === empty || password === empty || confirmPassword === empty) {
         alert("Please fill in all text fields!");
     }
     if (password !== confirmPassword) {
         alert("Sorry passwords MUST match!");
     }
+    if (userName !== empty && password !== empty && confirmPassword !== empty && password === confirmPassword) {
+        btn.disabled = true;
+    }
+
     //check the validitiy of passwords to userName
 }
 
