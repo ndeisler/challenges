@@ -7,15 +7,72 @@
 
 
 
-let answer = document.getElementById("answer");
 
 function add() {
-    let numberOne = document.getElementById("input1").value;
-    let numberTwo = document.getElementById("input2").value;
-    let sum = Number(numberOne) + Number(numberTwo);
-    let answer = document.getElementById("answer");
-    answer.innerHTML = sum;
-    return answer;
-    
+    let numOne = document.getElementById("input1").value;
+    let numTwo = document.getElementById("input2").value;
+    let p = document.getElementById("result");
+
+    let sum = Number(numOne) + Number(numTwo);
+
+    p.innerHTML = sum;
+    // h2.appendChild(p);
 }
+
+function sub() {
+    let numOne = document.getElementById("input1").value;
+    let numTwo = document.getElementById("input2").value;
+    let p = document.getElementById("result");
+
+    let sub = Number(numOne) - Number(numTwo);
+
+    p.innerHTML = sub;
+}
+
+function mult() {
+    let numOne = document.getElementById("input1").value;
+    let numTwo = document.getElementById("input2").value;
+    let p = document.getElementById("result");
+
+    let mult = Number(numOne) * Number(numTwo);
+
+    p.innerHTML = mult;
+
+}
+
+function divide() {
+    let numOne = document.getElementById("input1").value;
+    let numTwo = document.getElementById("input2").value;
+    let p = document.getElementById("result");
+
+    let divide = Number(numOne) / Number(numTwo);
+
+    p.innerHTML = divide;
+}
+
+function remainder() {
+    let numOne = document.getElementById("input1").value;
+    let numTwo = document.getElementById("input2").value;
+    let p = document.getElementById("result");
+
+    let remainder = Number(numOne) % Number(numTwo);
+
+    p.innerHTML = remainder;
+}
+
+// var add = document.getElementById("add");
+// var v1 = document.getElementById("#input1").value;
+// var v2 = document.getElementById("#input2").value;
+// let p = document.getElementById("result");
+// function displayResults() {
+//     p.innerHTML = performOperation();
+// }
+
+// function performOperation() {
+//     if (add.clicked === true) {
+//         return Number(v1) + Number(v2);
+//     }
+// }
+
+// add.addEventListener("click", performOperation());
 

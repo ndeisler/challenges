@@ -10,20 +10,23 @@
 </head>
 <body>
 
-    <div class="box">
+    <div class="calculator">
         <h1>Calculator</h1>
         <input id="input1" type="text"><br>
         <input id="input2" type="text">
         <div class="operators">
-            <div class="add" onclick="add">+</div>
-            <div class="sub">-</div>
-            <div class="mult">*</div>    
-            <div class="divide">/</div>
-            <div class="modulous">%</div>
+            <input type="button" id="add" value="+" onclick="add()">
+            <input type="button" id="sub" value="-" onclick="sub()">
+            <input type="button" id="mult" value="*" onclick="mult()">
+            <input type="button" id="divide" value="/" onclick="divide()">
+            <input type="button" id="modulous" value="%" onclick="remainder()">
         </div>
         <br>
         <br>
-        <h2 id="answer"></h2>
+        <div class="whiteBox">
+            <h2 id="answer">Result:</h2>
+            <p id="result"></p>
+        </div>
     </div>
 
 

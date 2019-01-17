@@ -1,5 +1,6 @@
-.box {
+.calculator {
     margin: auto;
+    margin-top: 40px;
     width: 50%;
     border: solid 2px black;
     text-align: center;
@@ -7,8 +8,13 @@
     height: 400px;
 }
 
+.calculator input {
+    width: 100px;
+    height: 20px;
+}
 
-.operators div {
+
+.operators input {
     display: inline-block;
     margin: 5px;
     border: solid 1px black;
@@ -16,14 +22,27 @@
     height: 40px;
     background-color: white;
     cursor: pointer;  
+    position: relative;
+    text-align: center;
+    font-size: 1.2em;
     
 }
 
-.operators div:hover {
+.operators input:hover {
     background-color: lightgreen;
 }
 
 input {
     margin: 10px;
     text-align: right;
+}
+.whiteBox{
+    border: solid 1px black;
+    margin: auto;
+    width: 40%;
+    background-color: white;
+}
+
+.calculator p {
+    font-weight: bold;
 }
